@@ -9,7 +9,7 @@ small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
+canvas, details, embed,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
@@ -19,7 +19,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-article, aside, details, figcaption, figure,
+article, aside, details,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
@@ -1840,7 +1840,7 @@ input, select, textarea {
 		font-weight: 300;
 		height: 2.75em;
 		line-height: 2.75em;
-		min-width: 9.25em;
+		/*min-width: 9.25em;*/
 		padding: 0 1.5em;
 		text-align: center;
 		text-decoration: none;
@@ -2583,9 +2583,9 @@ input, select, textarea {
 					width: 100%;
 				}
 
-					ul.actions:not(.fixed) li > * {
+					/*ul.actions:not(.fixed) li > * {
 						width: 100%;
-					}
+					}*/
 
 					ul.actions:not(.fixed) li:first-child {
 						padding-top: 0;
@@ -2809,7 +2809,7 @@ input, select, textarea {
 		list-style: none;
 	}
 
-		.features li {
+		.features li, .features .carousel {
 			width: calc(33.33333% - 2em);
 			margin-left: 2em;
 			margin-top: 3em;
@@ -2820,7 +2820,15 @@ input, select, textarea {
 				margin-top: 0;
 			}
 
+			.features .carousel:nth-child(1), .features .carousel:nth-child(2), .features .carousel:nth-child(3) {
+				margin-top: 0;
+			}
+
 			.features li > :last-child {
+				margin-bottom: 0;
+			}
+
+			.features .carousel > :last-child {
 				margin-bottom: 0;
 			}
 
@@ -2833,6 +2841,14 @@ input, select, textarea {
 				.features li:nth-child(3) {
 					margin-top: 3em;
 				}
+
+				.features .carousel {
+					width: calc(50% - 2em);
+				}
+	
+					.features .carousel:nth-child(3) {
+						margin-top: 3em;
+					}
 
 		}
 
@@ -2852,6 +2868,16 @@ input, select, textarea {
 					.features li:nth-child(2), .features li:nth-child(3) {
 						margin-top: 2em;
 					}
+		
+						.features .carousel {
+							width: 100%;
+							margin-left: 0;
+							margin-top: 2em;
+						}
+		
+							.features .carousel:nth-child(2), .features .carousel:nth-child(3) {
+								margin-top: 2em;
+							}
 
 		}
 
@@ -3714,7 +3740,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#footer {
-				padding: 4em 3em 2em 3em ;
+				/*padding: 4em 3em 2em 3em ;*/
 				display: block;
 				margin: 0 0 3em 0;
 				width: 100%;
@@ -3797,3 +3823,60 @@ input, select, textarea {
 			}
 
 		}
+
+		.inline-parent {
+			/*width:100%;
+			display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;*/
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		width: calc(100% + 2em);
+		margin: 0 0 3em -2em;
+		padding: 0;
+		list-style: none;
+		  }
+
+		  .inline-icon {
+			
+		  }
+
+		.carousel {
+			background: rgb(172, 172, 172);
+			/*display: inline-block;*/
+			padding: 0.1rem 0.1rem;
+			vertical-align: middle;
+			width: 45%;
+		  }
+		  
+		  .carousel-cell {
+			width: 100%;
+			height: 300px;
+			/*margin-right: 10px;
+			 center images in cells with flexbox */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		  }
+		  
+		  .carousel-cell-image {
+			display: block;
+			max-height: 100%;
+		  }
+		  
+		  

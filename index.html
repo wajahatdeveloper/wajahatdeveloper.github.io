@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon"       type="image/png"       href="images/logo.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/flickity.css" media="screen" />
 	</head>
 	<body class="is-preload">
 
@@ -44,16 +45,18 @@
 											I am Skilled in <b>C# Programming</b> and have Developed Mobile Games for both <b>Android</b> and <b>IOS</b></br>
 											I have Acquired the Skill of Developing Web Based Games using <b>WebGL</b> and Unity. <br>
 											I have Extensive Experience of <b>Multiplayer</b> Development using <b>Photon</b> in both Unity 3D and 2D. </br></p>
-										<ul class="actions special">
-											<!--<li><a href="generic.html" class="button">Learn More</a></li>-->
-											<li><img width="52" height="52" src="images/csharp.png" alt="" /></li>
-											<li><img width="52" height="52" src="images/google-play.png" alt="" /></li>
-											<li><img width="52" height="52" src="images/android.png" alt="" /></li>
-											<li><img width="52" height="52" src="images/apple.png" alt="" /></li>
-											<li><img width="52" height="52" src="images/microsoft.png" alt="" /></li>
-											<li><img width="52" height="52" src="images/webgl.png" alt="" /></li>
-											<li><img width="52" height="52" src="images/photon.png" alt="" /></li>
-										</ul>
+											<div>
+												<ul class="actions special inline-parent">
+												<!--<li><a href="generic.html" class="button">Learn More</a></li>-->
+												<li class="inline-icon"><img width="52" height="52" src="images/csharp.png" alt="" /></li>
+												<li class="inline-icon"><img width="52" height="52" src="images/google-play.png" alt="" /></li>
+												<li class="inline-icon"><img width="52" height="52" src="images/android.png" alt="" /></li>
+												<li class="inline-icon"><img width="52" height="52" src="images/apple.png" alt="" /></li>
+												<li class="inline-icon"><img width="52" height="52" src="images/microsoft.png" alt="" /></li>
+												<li class="inline-icon"><img width="52" height="52" src="images/webgl.png" alt="" /></li>
+												<li class="inline-icon"><img width="52" height="52" src="images/photon.png" alt="" /></li>
+												</ul>
+											</div>
 									</div>
 									<!--<span class="image"><img src="images/pic01.jpg" alt="" /></span> -->
 								</div>
@@ -65,14 +68,33 @@
 									<h2>Amazing Game Projects</h2>
 								</header>
 
-  <br>
+
+
+<div class="features">
+<!-- Flickity HTML init -->
+<div class="carousel js-flickity"
+	data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": true, "pageDots": true , "autoPlay": 2500 }'>
+
+	<div class="carousel-cell"><img src="images/pic01.jpg" alt="" /></div>
+	<div class="carousel-cell"><img src="images/pic01.jpg" alt="" /></div>
+	<div class="carousel-cell"><img src="images/pic01.jpg" alt="" /></div>
+	<div class="carousel-cell"><img src="images/pic01.jpg" alt="" /></div>
+	<div class="carousel-cell"><img src="images/pic01.jpg" alt="" /></div>
+  </div>
   
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-	<span class="dot" onclick="currentSlide(1)"></span>
-	<span class="dot" onclick="currentSlide(2)"></span>
-	<span class="dot" onclick="currentSlide(3)"></span>
-  </div> 
+<div class="carousel js-flickity"
+data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": true, "pageDots": true , "autoPlay": 2500 }'>
+
+	<div class="carousel-cell"><img src="images/pic01.jpg" alt="" /></div>
+	<div class="carousel-cell"><img src="images/pic01.jpg" alt="" /></div>
+	<div class="carousel-cell"><img src="images/pic01.jpg" alt="" /></div>
+	<div class="carousel-cell"><img src="images/pic01.jpg" alt="" /></div>
+	<div class="carousel-cell"><img src="images/pic01.jpg" alt="" /></div>
+  </div>
+</div>
+<br/>
+
+
 								<ul class="features">
 									<li>
 										<!--<span class="icon solid major style1 fa-code"></span>-->
@@ -260,7 +282,7 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets/js/flickity.pkgd.min.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
