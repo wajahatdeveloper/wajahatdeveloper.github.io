@@ -3852,12 +3852,13 @@ input, select, textarea {
 		list-style: none;
 		  }
 
-		  .inline-icon {
-			
+		  .carousel-cell img {
+			max-width: 100%;
+			max-height: 100%;
 		  }
 
 		.carousel {
-			background: rgb(172, 172, 172);
+			background: rgb(0, 0, 0);
 			/*display: inline-block;*/
 			padding: 0.1rem 0.1rem;
 			vertical-align: middle;
@@ -3867,16 +3868,9 @@ input, select, textarea {
 		  .carousel-cell {
 			width: 100%;
 			height: 300px;
-			/*margin-right: 10px;
-			 center images in cells with flexbox */
 			display: flex;
 			align-items: center;
 			justify-content: center;
-		  }
-		  
-		  .carousel-cell-image {
-			display: block;
-			max-height: 100%;
 		  }
 		  
 		  
