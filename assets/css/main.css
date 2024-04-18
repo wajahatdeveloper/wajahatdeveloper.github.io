@@ -256,6 +256,9 @@ input, select, textarea {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 1rem;
 		margin: 0 0 2rem 0;
+		overflow-x: auto;
+		white-space: pre-wrap;
+		word-wrap: break-word;
 	}
 
 		pre code {
@@ -3854,6 +3857,46 @@ input, select, textarea {
 			text-align: center;
 		}
 
+		.featured-posts {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-moz-align-items: -moz-stretch;
+			-webkit-align-items: -webkit-stretch;
+			-ms-align-items: -ms-stretch;
+			align-items: stretch;
+			text-align: center;
+			width: 100%;
+			padding: 0;
+		}
+
+		#main > .featured-posts > * {
+			-moz-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;
+			-moz-flex-grow: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-grow: 0;
+			flex-grow: 0;
+		}
+
+		#main > .featured-posts > article {
+			padding: 1rem;
+			width: 50%;
+		}
+
+		@media screen and (max-width: 1680px) {
+			.featured-posts {
+
+			}
+		  }
+
 		#main > .post {
 			/* padding: 8rem 8rem 6rem 8rem ; */
 		}
@@ -3872,12 +3915,17 @@ input, select, textarea {
 				text-align: center;
 			}
 
+			/* @media screen and (min-width: 737px) and (max-width: 1280px) {
+				#main > .post.featured {
+					width: 50%;
+				}
+			} */
+
 			@media screen and (max-width: 1280px) {
 
 				#main > .post {
 					/* padding: 6rem 4rem 4rem 4rem ; */
 				}
-
 			}
 
 			@media screen and (max-width: 736px) {
@@ -3934,7 +3982,7 @@ input, select, textarea {
 			}
 
 			#main > .posts > * {
-				padding: 4rem;
+				padding: 1rem;
 				width: 50%;
 			}
 
@@ -3951,7 +3999,7 @@ input, select, textarea {
 				}
 
 				#main > .posts > article:nth-child(2n - 1) {
-					border-left-width: 0;
+					/* border-left-width: 0; */
 				}
 
 				#main > .posts > article:nth-child(-n + 2) {
@@ -3965,7 +4013,7 @@ input, select, textarea {
 				}
 
 				#main > .posts > * {
-					padding: 2.5rem;
+					padding: 1rem;
 					width: 50%;
 				}
 
@@ -3978,7 +4026,7 @@ input, select, textarea {
 				}
 
 				#main > .posts > * {
-					padding: 2rem;
+					padding: 1rem;
 					width: 100%;
 				}
 
@@ -3991,7 +4039,7 @@ input, select, textarea {
 				}
 
 				#main > .posts > article:nth-child(n) {
-					border-left-width: 0;
+					/* border-left-width: 0; */
 				}
 
 				#main > .posts > article:nth-child(-n + 1) {
